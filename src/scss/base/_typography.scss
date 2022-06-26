@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+body {
+    font-size: $fs-body;
+    font-family: $ff-primary;
+
+    .card__description {
+        color: $des-blue;
+        margin-top: 0.82rem;
+    }
+    .card__title {
+        font-size: 1rem;
+        margin-top: 0.75rem;
+        color: $dark-gray-blue;
+    }
+}
+
+@media (min-width: $layout-breakpoint-desktop) {
+    body {
+        font-size: 0.9375rem;
+
+        .card__text {
+            margin-top: 0.35rem;
+        }
+        .card__title {
+            font-size: 1.7rem;
+            margin-top: 1.8rem;
+        }
+        span {
+            font-size: 0.9375rem;
+        }
+    }
+}

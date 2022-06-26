@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+.author {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    &__info {
+        display: flex;
+        gap: 1rem;
+    }
+    &__avatar {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    &__username {
+        color: $dark-gray-blue;
+        font-size: 0.8rem;
+    }
+    &__post-date {
+        color: $grayish-blue;
+    }
+    .share {
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        background-color: $light-blue;
+        border-radius: 50%;
+    }
+}

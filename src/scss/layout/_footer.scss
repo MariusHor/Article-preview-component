@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.footer {
+    position: sticky;
+    top: 100vh;
+    width: 100%;
+    padding: 1rem;
+    border-top: solid 1px #cacacd;
+    text-align: center; 
+    background: $neutral-dark-blue;
+    color: $white;
+
+    &__link {
+        color: yellow;
+        font-weight: $fw-secondary;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+    }
+        
+    &__link:hover {
+        color: yellowgreen;
+    }
+
+    &__link::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: yellowgreen;
+        left: 0;
+        bottom: 0;
+    }
+    
+    &__link:hover::after {
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+    
+    &__link:focus-visible,
+    &__link:focus {
+        outline-offset: 0.0625rem;
+        outline: 0.15rem dotted $clr-link-outline;
+    }
+}

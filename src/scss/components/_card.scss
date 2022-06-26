@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.card {
+    background: $white;
+    margin: 1.5rem;
+    border-radius: 0.6rem;
+    max-width: 25.75rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0 rgba($color: $dark-gray-blue, $alpha: 0.1);
+
+    &__image-container {
+        height: 12.5rem;
+        overflow: hidden;
+        .card__image {
+            transform: translateY(-6%);
+            opacity: 0.93;
+        }
+    }
+
+    &__info {
+        padding: 1.5rem 2.31rem 1.25rem 2rem;
+    }
+}
+
+@media (min-width: $layout-breakpoint-desktop) {
+    .card {
+        padding: 2rem;
+        border-radius: 1.7rem;
+    }
+}
