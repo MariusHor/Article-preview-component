@@ -4,27 +4,33 @@
     background: $white;
     margin: 1.5rem;
     border-radius: 0.6rem;
-    max-width: 25.75rem;
+    max-width: 45.6rem;
     overflow: hidden;
     box-shadow: 0 5px 15px 0 rgba($color: $dark-gray-blue, $alpha: 0.1);
 
-    &__image-container {
+    &__image {
+        background-image: url(/img/drawers.jpg);
+        background-position: center;
+        background-size: cover;
         height: 12.5rem;
-        overflow: hidden;
-        .card__image {
-            transform: translateY(-6%);
-            opacity: 0.93;
-        }
+        opacity: 0.92;
+        object-position: 10px;
     }
 
-    &__info {
+    &__details {
         padding: 1.5rem 2.31rem 1.25rem 2rem;
     }
 }
 
 @media (min-width: $layout-breakpoint-desktop) {
     .card {
-        padding: 2rem;
-        border-radius: 1.7rem;
+        display: flex;
+        &__image {
+            height: 18rem;
+            width: 49rem;
+        }
+        &__details {
+            padding: 1.5rem 2.8rem 1.25rem 2.3rem;
+        }
     }
 }

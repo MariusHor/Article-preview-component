@@ -68,44 +68,43 @@ body .card__title {
 }
 
 @media (min-width: 62em) {
-  body {
-    font-size: 0.9375rem;
-  }
-  body .card__text {
-    margin-top: 0.35rem;
+  body .card__description {
+    font-size: 0.8rem;
   }
   body .card__title {
-    font-size: 1.7rem;
-    margin-top: 1.8rem;
-  }
-  body span {
-    font-size: 0.9375rem;
+    font-size: 1.2rem;
   }
 }
 .card {
   background: hsl(0deg, 0%, 100%);
   margin: 1.5rem;
   border-radius: 0.6rem;
-  max-width: 25.75rem;
+  max-width: 45.6rem;
   overflow: hidden;
   box-shadow: 0 5px 15px 0 rgba(72, 85, 106, 0.1);
 }
-.card__image-container {
+.card__image {
+  background-image: url(/img/drawers.jpg);
+  background-position: center;
+  background-size: cover;
   height: 12.5rem;
-  overflow: hidden;
+  opacity: 0.92;
+  object-position: 10px;
 }
-.card__image-container .card__image {
-  transform: translateY(-6%);
-  opacity: 0.93;
-}
-.card__info {
+.card__details {
   padding: 1.5rem 2.31rem 1.25rem 2rem;
 }
 
 @media (min-width: 62em) {
   .card {
-    padding: 2rem;
-    border-radius: 1.7rem;
+    display: flex;
+  }
+  .card__image {
+    height: 18rem;
+    width: 49rem;
+  }
+  .card__details {
+    padding: 1.5rem 2.8rem 1.25rem 2.3rem;
   }
 }
 .author {
